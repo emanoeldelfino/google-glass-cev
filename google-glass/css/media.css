@@ -1,0 +1,76 @@
+div#tv-radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url('../images/radio-tv.png') no-repeat;
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 490px;
+    width: 300px
+}
+
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 50px;
+    top: -20px;
+    width: 500px;
+    height: 410px;
+}
+
+/* iframe#youtube {
+    display: block;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    height: 300px;
+    width: 530px;
+} */
+
+@media (max-width: 800px) {
+    article#noticia-principal {
+        height: 600px;
+    }
+
+    div#tv-radio {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: none;
+        height: 300px;
+    }
+
+    video#filme {
+        width: 90%;
+        height: 100%;
+    }
+
+    audio#musica {
+        top: 375px;
+        left: 25%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    article#noticia-principal {
+        height: 375px;
+    }
+
+    video#filme {
+        top: -50px;
+        height: 50%;
+        margin: 0;
+        left: 0;
+    }
+
+    audio#musica {
+        left: 0;
+        top: 175px;
+    }
+}

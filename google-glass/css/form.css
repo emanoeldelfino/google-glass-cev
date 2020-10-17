@@ -1,0 +1,98 @@
+p {
+    text-align: left; 
+    text-indent: 0;
+}
+
+input, textarea {
+    font: 13pt normal, sans-serif;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: #888888;
+    font: bold 13pt sans-serif;
+}
+
+textarea#cMsg::placeholder {
+    text-align: center;
+    line-height: 107px;
+}
+
+textarea#cMsg {
+    resize: none;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    width: 98.5%;
+    height: 120px;
+}
+
+form#fContato {
+    width: 50%;
+    margin: auto;
+
+    text-align: center;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#usuario {
+    background: url("../images/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url("../images/icone-endereco.png") no-repeat right;
+}
+
+fieldset#mensagem {
+    background: url("../images/icone-mensagem.png") no-repeat right bottom;
+}
+
+fieldset#pedido {
+    background: url("../images/icone-pagamento.png") no-repeat right bottom;
+}
+
+fieldset#usuario fieldset#sexo {
+    width: 150px;  
+    text-align: left;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+fieldset#pedido p input#cCor {
+    border: none;
+}
+
+textarea#cMsg {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    form#fContato {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    section#corpo-full {
+        display: flex;
+        align-items: left;
+    }
+
+    form#fContato {
+        width: 100%;
+        margin: 0;
+    }
+
+    form#botao-enviar {
+        width: 100%;
+    }
+}

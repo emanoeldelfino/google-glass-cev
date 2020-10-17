@@ -1,0 +1,375 @@
+/*@charset "UTF-8";*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    /* Fonte sem serifa -> Sem tracinhos nas letras */
+    background-color: #ddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 890px;
+    background-color: #fff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 15px;
+    margin-top: 5px;
+}
+
+p {
+    text-align: justify; 
+    /* text-indent: 50px; */
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Cabeçalhos */
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 50%;
+    top: 145px;
+    z-index: 1;
+}
+
+header#cabecalho hgroup {
+    position: relative;
+    height: 150px;
+    border-bottom: 1px #606060 solid;
+    background: url("../images/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+div#interface hgroup {
+    position: relative;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font: 20pt 'FonteLogo', sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #606060;
+}
+
+#direita {
+    text-align: right;
+}
+
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 2s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+
+/* Formatação do Menu */
+
+nav#menu {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+nav#menu ul {
+    list-style: none; /* Tira os pontos-lista dos itens da lista li */
+    text-transform: uppercase;  /* Transforma texto em maiúsculas */
+    position: relative;
+    top: -10px;
+    left: auto;
+}
+
+nav#menu li {
+    display: inline-block; /* Deixa os itens horizontais, um ao lado do outro */
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: #808080;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 1em;     
+    margin: -1em; 
+
+}
+
+nav#menu li:hover a{
+    color: #fff;
+    /* text-decoration: underline; */
+}
+
+
+section#corpo {
+    display: block;
+    width: 475px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+/* Tabela */
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin: 0 auto 0 auto;
+    /* ou */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    /* vertical-align: middle; */
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: 900;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    font-size: 8pt;
+    color: #000000;
+    float: right;
+    margin-top: 8px;
+}
+
+/* Aside */
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font: 20pt 'FonteLogo', sans-serif;
+    color: #606060;
+    margin-top: 0px;
+    text-align: right;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+/* Footer */
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+footer#rodape a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores*/
+@media (max-width: 800px) {
+    header#cabecalho {
+        top: -10px;
+    }
+
+    header#cabecalho img#icone {
+        display: none;
+    }
+
+    section#corpo, 
+    table#tabelaspec caption span,
+    aside#lateral {
+        float: none;
+    }
+
+    section#corpo {
+        width: 575px; 
+        border: none;
+    }
+
+    div#interface {
+        width: 600px;
+    }
+
+    aside#lateral {
+        width: 96.5%;
+    }
+
+    aside#lateral h1 {
+        text-align: left;
+    }
+
+    footer#rodape {
+        border: none;
+    }
+
+    nav#menu ul {
+        padding: 0;
+    }
+   
+    nav#menu li {
+        display: block;
+        width: 94%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    section#corpo, 
+    table#tabelaspec caption span,
+    aside#lateral {
+        float: none;
+    }
+
+    section#corpo {
+        width: 275px; 
+    }
+
+    div#interface {
+        width: 300px;
+    }
+
+    video.videos {
+        height: 160px;
+        width: 280px;
+    }
+
+    header#cabecalho hgroup {
+        width: 200px;
+        text-align: center;
+        background: none;
+    }
+
+    aside#lateral {
+        width: 280px;
+    }
+
+    header#cabecalho hgroup {
+        border-bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    header#cabecalho-artigo h3#header-h3 {
+        margin-top: 25px;
+        position: relative;
+        top: 23px;
+    }
+
+    nav#menu ul li a {
+        width: 100%;
+    }
+}

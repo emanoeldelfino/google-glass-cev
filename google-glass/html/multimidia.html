@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <script src="../javascript/funcoes.js" async></script>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('../images/home.png')" onmouseout="mudaFoto('../images/multimidia.png')">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../images/especificacoes.png')"
+                        onmouseout="mudaFoto('../images/multimidia.png')">
+                        <a href="specs.html">Especificações</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../images/fotos.png')" onmouseout="mudaFoto('../images/multimidia.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../images/multimidia.png')"
+                        onmouseout="mudaFoto('../images/multimidia.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../images/contato.png')"
+                        onmouseout="mudaFoto('../images/multimidia.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="../images/multimidia.png" />
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3 id="header-h3">Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>por Emanoel Delfino</h2>
+                        <h3 id="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls">
+                        <source src="../media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg" />
+                        <source src="../media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac">
+                        <source src="../media/2009-lovers-carvings-bibio.ogg" type="audio/ogg">
+                        Seu navegador não suporta a tag audio.
+                    </audio>
+
+                    <video id="filme" controls="controls" poster="../images/video-mini03.jpg">
+                        <source src="../media/getting-started.mp4" type="video/mp4">
+                        <source src="../media/getting-started.webm" type="video/webm">
+                        <source src="../media/getting-started.ogg" type="video/ogg">
+                        Seu navegador não suporta a tag video.
+                    </video>
+
+                    <!-- <iframe id="youtube" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe> -->
+                </div>
+
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2020 - by Emanoel Delfino <br><br>
+                <a href="http://facebook.com/google" target="_blank">Facebook</a> |
+                <a href="http://twitter.com/google" target="_blank">Twitter</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
