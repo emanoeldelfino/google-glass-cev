@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JS</title>
+    <script>
+        function acendeLampada() {
+            // alert("Lâmpada acendeu!");
+            document.getElementById("lamp").src = "google-glass/images/lampada-acesa.jpg";
+        }
+
+        function apagaLampada() {
+            document.getElementById("lamp").src = "google-glass/images/lampada-apagada.jpg";
+        }
+
+        function quebraLampada() {
+            document.getElementById("lamp").src = "google-glass/images/lampada-quebrada.jpg";
+            apagaLampada = acendeLampada = undefined;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="google-glass/images/lampada-apagada.jpg" id="lamp" alt="lamp" onmousemove="acendeLampada()"
+        onmouseout="apagaLampada()" onclick="quebraLampada()" > 
+</body>
+
+</html>

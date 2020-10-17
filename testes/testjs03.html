@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JS</title>
+    <script>
+        let quebrada = false;
+        function mudaLampada(action) {
+            if (!quebrada) {
+                document.getElementById("lamp").src = `google-glass/images/lampada-${action}.jpg`;
+            }
+
+            if (action === 'quebrada') {
+                quebrada = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="google-glass/images/lampada-apagada.jpg" id="lamp" alt="lamp" 
+    onmousemove="mudaLampada('acesa')"
+    onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')">
+</body>
+
+</html>
